@@ -29,12 +29,6 @@ The `references/` directory contains categorized prompt data (auto-generated dai
 
 <!-- REFERENCES_START -->
 
-### Core Files
-
-| File | Description | Count | Loading |
-|------|-------------|-------|---------|
-| `featured.json` | Featured/highlighted prompts | 9 | **Full load allowed** |
-
 ### Use Case Category Files
 
 | File | Category | Count |
@@ -74,15 +68,12 @@ Use this table to quickly identify which file(s) to search based on user's reque
 
 ### CRITICAL: Token Optimization Rules
 
-1. **`featured.json` ONLY**: Can be fully loaded (small file, ~10 prompts)
-   - Use when: vague requests, need inspiration, creating custom prompts
-
-2. **ALL OTHER FILES**: NEVER fully load. Use Grep to search:
-   ```
-   Grep pattern="keyword" path="references/category-name.json"
-   ```
-   - Search multiple category files if user's need spans categories
-   - Load only matching prompts, not entire files
+**NEVER fully load category files.** Use Grep to search:
+```
+Grep pattern="keyword" path="references/category-name.json"
+```
+- Search multiple category files if user's need spans categories
+- Load only matching prompts, not entire files
 
 ## Workflow
 
@@ -112,7 +103,7 @@ If user's request is too broad, ask for specifics using AskUserQuestion:
 1. Identify target category from signal mapping table
 2. Use Grep to search relevant file(s) with keywords from user's request
 3. If no match in primary category, search `others.json`
-4. If still no match, load `featured.json` for inspiration
+4. If still no match, proceed to Step 4 (Generate Custom Prompt)
 
 ### Step 3: Present Results
 
@@ -149,17 +140,32 @@ For each recommended prompt, provide in user's input language:
 
 **IMPORTANT**: Do NOT provide any customized/remixed prompts until the user explicitly selects a template. The customization happens in Step 5, not here.
 
-### Step 4: Handle No Match
+### Step 4: Handle No Match (Generate Custom Prompt)
 
-If no suitable prompts found in ANY category file:
-1. Load `featured.json` completely
-2. Present featured prompts as alternatives
-3. **Only if user agrees** to proceed without a matching template, then create a custom prompt based on:
-   - Similar prompts in featured collection
-   - User's specific requirements
-   - Best practices from examples
+If no suitable prompts found in ANY category file, generate a custom prompt:
 
-**NOTE**: Always try to find existing templates first. Custom prompt creation is a last resort, not the default.
+1. **Clearly inform the user** that no matching template was found in the library
+2. **Generate a custom prompt** based on user's requirements
+3. **Mark it as AI-generated** (not from the library)
+
+**Output format**:
+
+```markdown
+---
+**No matching template found in the library.** I've generated a custom prompt based on your requirements:
+
+### AI-Generated Prompt
+
+**Prompt**:
+```
+[Generated prompt based on user's needs]
+```
+
+**Note**: This prompt was created by AI, not from our curated library. Results may vary.
+
+---
+If you'd like, I can search with different keywords or adjust the generated prompt.
+```
 
 ### Step 5: Remix & Personalization (Content Illustration Mode Only)
 

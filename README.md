@@ -128,7 +128,6 @@ nano-banana-pro-prompts-recommend-skill/
 ├── scripts/
 │   └── generate-references.ts   # Fetches data from CMS
 ├── references/              # Auto-generated JSON files
-│   ├── featured.json        # Featured prompts (full load allowed)
 │   ├── {category}.json      # Category files (search only)
 │   └── others.json          # Uncategorized prompts
 └── .github/workflows/
@@ -170,10 +169,10 @@ Runs at 00:00 and 12:00 UTC daily.
 
 Following [Claude Code skill best practices](https://github.com/anthropics/skills):
 
-- **Progressive Disclosure** — Only `featured.json` fully loaded; others searched via Grep
 - **Signal Mapping** — Keyword-to-category routing for efficient search
-- **Token Optimization** — Never loads full category files into context
+- **Token Optimization** — Never loads full category files; uses Grep to search
 - **Content-Aware Remix** — Extracts themes from user content and personalizes prompts with clarifying questions
+- **Graceful Fallback** — If no match found, generates custom prompt with clear AI-generated label
 
 ## Related Links
 

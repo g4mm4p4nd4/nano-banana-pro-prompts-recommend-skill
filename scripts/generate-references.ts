@@ -34,7 +34,6 @@ interface CMSPrompt {
     thumbnail?: string;
   };
   media?: Media[];
-  featured?: boolean;
   needReferenceImages?: boolean;
   imageCategories?: {
     useCases?: Array<{ id: number; title: string; slug: string }>;
@@ -188,7 +187,6 @@ async function fetchAllPrompts(): Promise<CMSPrompt[]> {
     sourceMedia: true,
     video: true,
     media: true,
-    featured: true,
     needReferenceImages: true,
     imageCategories: true,
   };
@@ -199,7 +197,7 @@ async function fetchAllPrompts(): Promise<CMSPrompt[]> {
     const query = {
       limit: 100,
       page,
-      sort: ["-featured", "sort", "-sourcePublishedAt"].join(","),
+      sort: ["sort", "-sourcePublishedAt"].join(","),
       depth: 2,
       locale: "en",
       select: selectFields,
@@ -260,9 +258,7 @@ async function generateReferences() {
 
   // Organize prompts by category
   const categoryPrompts: Map<string, OutputPrompt[]> = new Map();
-  const featuredPrompts: OutputPrompt[] = [];
   const othersPrompts: OutputPrompt[] = [];
-  const seenInCategories = new Set<number>();
 
   // Initialize category maps
   for (const cat of useCaseCategories) {
@@ -274,11 +270,6 @@ async function generateReferences() {
     const outputPrompt = transformToOutputPrompt(prompt);
     if (!outputPrompt) continue;
 
-    // Add to featured if applicable
-    if (prompt.featured) {
-      featuredPrompts.push(outputPrompt);
-    }
-
     // Categorize by use cases
     const useCases = prompt.imageCategories?.useCases || [];
     if (useCases.length > 0) {
@@ -286,7 +277,6 @@ async function generateReferences() {
         const categorySlug = useCase.slug;
         if (categoryPrompts.has(categorySlug)) {
           categoryPrompts.get(categorySlug)!.push(outputPrompt);
-          seenInCategories.add(prompt.id);
         }
       }
     }
@@ -299,14 +289,6 @@ async function generateReferences() {
 
   // Write JSON files
   const writtenFiles: { name: string; count: number; slug: string }[] = [];
-
-  // Write featured.json
-  fs.writeFileSync(
-    path.join(referencesDir, "featured.json"),
-    JSON.stringify(featuredPrompts, null, 2)
-  );
-  writtenFiles.push({ name: "featured.json", count: featuredPrompts.length, slug: "featured" });
-  console.log(`Written featured.json with ${featuredPrompts.length} prompts`);
 
   // Write category files
   for (const cat of useCaseCategories) {
@@ -355,12 +337,6 @@ async function updateSkillMd(
   const lines: string[] = [
     "<!-- REFERENCES_START -->",
     "",
-    "### Core Files",
-    "",
-    `| File | Description | Count | Loading |`,
-    `|------|-------------|-------|---------|`,
-    `| \`featured.json\` | Featured/highlighted prompts | ${files.find(f => f.slug === "featured")?.count || 0} | **Full load allowed** |`,
-    "",
     "### Use Case Category Files",
     "",
     `| File | Category | Count |`,
@@ -368,8 +344,7 @@ async function updateSkillMd(
   ];
 
   // Add category files (including others.json)
-  const categoryFiles = files.filter(f => f.slug !== "featured");
-  for (const file of categoryFiles) {
+  for (const file of files) {
     const title = file.slug === "others"
       ? "Uncategorized"
       : (categoryTitles.get(file.slug) || file.slug);
