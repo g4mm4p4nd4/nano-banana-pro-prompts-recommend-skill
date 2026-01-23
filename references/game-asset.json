@@ -1,5 +1,14 @@
 [
   {
+    "content": "Use Reference figuire1 Create Ultra-detailed 3D stylized character design of a cute with a Pixar/Disney-inspired look, soft rounded facial features, big expressive eyes, smooth porcelain skin, and playful proportions.\nOutfit is cozy-chic and modern: oversized knitted sweaters, fluffy jackets, cropped tops, skirts or wide-leg jeans, textured fabrics like wool, fleece, and knit, paired with chunky sneakers or plush boots. Warm color palette with pastel and vibrant tones ({argument name=\"Color Palette\" default=\"orange, teal, purple, yellow\"}).\nAccessories include a small backpack or sling bag, headphones or goggles, and a cute animal companion (like a {argument name=\"Animal Companion\" default=\"tiny owl\"}) resting on person shoulder. Confident yet relaxed pose, fashion-model stance or playful walking motion.\nRendered in ultra-high-quality 3D, soft studio lighting, smooth gradients, clean solid background colors, shallow depth of field, cinematic composition, highly detailed fabric textures, realistic subsurface scattering, polished toy-like finish, adorable and wholesome aesthetic, premium character art, 8K resolution, Octane/Arnold style render.",
+    "title": "Ultra-Detailed 3D Stylized Character Design Prompt",
+    "description": "A detailed prompt for generating a Pixar/Disney-inspired 3D stylized character, focusing on soft features, expressive eyes, cozy-chic modern outfit, and high-quality rendering specifications like Octane/Arnold style and 8K resolution.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769149390493_3akc2w_G_Pq-uHakAEI5re.jpg"
+    ],
+    "needReferenceImages": true
+  },
+  {
     "content": "Create a high-quality 3D avatar of the person in the uploaded image with a cheerful, expressive face. The character should have a warm smile, bright eyes, and soft facial features that feel friendly and approachable. Render in a Pixar-style aesthetic with smooth textures, subtle skin shading, and slightly exaggerated proportions for a cute, animated look. Lighting should be soft and even, creating a clean studio look with gentle shadows for depth.",
     "title": "Pixar-style 3D avatar generation prompt",
     "description": "A prompt for creating a high-quality 3D avatar based on an uploaded image. It specifies a cheerful, expressive face with a warm smile and soft features, rendered in a Pixar-style aesthetic with smooth textures, exaggerated proportions, and soft, even studio lighting.",

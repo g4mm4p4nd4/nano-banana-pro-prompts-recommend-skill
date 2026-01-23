@@ -12,6 +12,53 @@
     "needReferenceImages": true
   },
   {
+    "content": "{\n  \"vibe_title_en\": \"The Mental Orbit\",\n  \"master_prompt\": \"A hyper-realistic medium shot of The Protagonist standing in a cavernous, dimly lit brutalist concrete chamber. The concept is 'Endless Ideas' visualized as a surreal kinetic sculpture. The subject is surrounded by dozens of floating, chrome spheres and jagged mirror fragments of varying sizes that orbit their head like a planetary ring. These objects must look like high-end practical effects, with realistic weight and reflection, not digital overlays. The subject gazes intensely at a single crystal prism hovering just above their open palm, which refracts a spectrum of light onto their face. Shot on a Hasselblad H6D-100c with an 80mm f/2.8 lens. The lighting is moody and directional, creating deep shadows and bright specular highlights on the chrome surfaces. Texture is rich with film grain (Kodak Vision3 500T), emphasizing the contrast between the smooth metal and the porous skin texture of the subject. No neon, just cold tungsten and daylight tones.\",\n  \"meta\": {\n    \"intent\": \"Surrealist Portraiture\",\n    \"priorities\": \"Photorealism, Physicality of Surreal Elements, Texture\",\n    \"device_profile\": \"High-Resolution Cinema Display\"\n  },\n  \"frame\": {\n    \"aspect\": \"4:5\",\n    \"composition\": \"Center-weighted subject with chaotic orbital elements filling the negative space\",\n    \"layout\": \"Symmetrical subject anchoring asymmetrical floating props\",\n    \"camera_angle\": \"Eye-level\",\n    \"tilt_roll_degrees\": \"0\"\n  },\n  \"subject\": {\n    \"gender\": \"{argument name=\"gender\" default=\"Female\"}\",\n    \"identity\": \"The Intellectual Protagonist\",\n    \"demographics\": \"Universal/Ageless\",\n    \"face\": \"Neutral, highly focused gaze, micro-expressions of wonder\",\n    \"hair\": \"Natural texture, slightly windblown by the static energy of the room\",\n    \"body\": \"Static posture, hands raised slightly to interact with levitating objects\",\n    \"expression\": \"Intense concentration, mouth slightly parted\",\n    \"pose\": \"Standing still, resembling a conductor of the floating elements\"\n  },\n  \"wardrobe_accessories\": {\n    \"garments\": [\n      {\n        \"item\": \"Turtleneck Sweater\",\n        \"material\": \"Fine Cashmere or Merino Wool\",\n        \"color\": \"{argument name=\"sweater color\" default=\"Charcoal Grey\"} or Deep Navy\",\n        \"fit\": \"Fitted, textured\"\n      },\n      {\n        \"item\": \"Tailored Trousers\",\n        \"material\": \"Wool Blend\",\n        \"color\": \"Black\",\n        \"fit\": \"Straight leg\"\n      }\n    ],\n    \"accessories\": [\n      {\n        \"item\": \"None\",\n        \"color\": \"N/A\",\n        \"material\": \"N/A\",\n        \"brand_style\": \"Minimalist\"\n      }\n    ]\n  },\n  \"environment\": {\n    \"setting\": \"Brutalist Concrete Chamber (Void Space)\",\n    \"surfaces\": \"Raw concrete, polished chrome, glass shards\",\n    \"depth\": \"Deep background fading into shadow, sharp focus on subject and immediate floating objects\",\n    \"atmosphere\": \"Cold, sterile air, suspended dust motes, quiet intensity\",\n    \"lens_interaction\": \"Reflections of the room visible in the floating spheres\"}",
+    "title": "The Mental Orbit: Hyper-realistic Surrealist Portraiture",
+    "description": "A highly detailed, structured prompt designed for hyper-realistic surrealist portraiture. It specifies a medium shot of a protagonist in a brutalist concrete chamber, surrounded by orbiting chrome spheres and mirror fragments, visualizing 'Endless Ideas.' The prompt includes extensive details on lighting, texture (Kodak Vision3 500T film grain), composition, subject appearance, and wardrobe, aiming for a high-end practical effects look rather than a digital overlay.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769149394084_1ol6z0_G_U5PwMXwAAAf15.jpg",
+      "https://cms-assets.youmind.com/media/1769149395360_xi55rp_G_U5P0UWwAAYWGO.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Vascular Effect Object",
+    "title": "Vascular Effect Object Prompt",
+    "description": "A short, descriptive prompt for generating an image featuring a 'Vascular Effect Object.' The specific object details are missing, making the prompt vague but suggesting a focus on biological or vein-like textures.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769149389198_5yitu7_G_S0LBcX0AAOUj_.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Gradient image with a fractal glass isometric grid texture",
+    "title": "Generating Fractal Glass Gradient Images with Nano Banana Pro",
+    "description": "A user describes their experience using Nano Banana Pro to generate gradient images with a fractal glass isometric grid texture. They note that the model's understanding of 'Fractal glass' sometimes changes, leading to unexpected results, but generally, Nano Banana Pro's output quality is superior to other image generation models.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769149379234_9s4vmn_G_R1XP_asAAQv_A.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Change the character in the first image to the pose in the second image",
+    "title": "Prompt for Changing Character Pose using Reference Image",
+    "description": "A prompt used in Nano Banana Pro to change the pose of a character in an existing image by referencing a separate 3D drawing doll image as the target pose. This is a test of the image-to-image pose transfer capability.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769149375793_6swcl2_G_RZPTIWkAAGZ3B.jpg",
+      "https://cms-assets.youmind.com/media/1769149375786_a5c691_G_RYnitXoAAZ_KO.jpg"
+    ],
+    "needReferenceImages": true
+  },
+  {
+    "content": "Please create an image of how I have treated you so far.",
+    "title": "AI Relationship Visualization Prompt",
+    "description": "A prompt used with AI nanobanana Pro to generate an image symbolizing the user's relationship with the AI, focusing on themes of co-creation, exploration, and partnership, followed by the AI's detailed interpretation of the generated image.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769149373861_iaocz1_G_PfQywbIAAaROG.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
     "content": "Draw a picture of a singular man who matches the description \"{argument name=\"character blend\" default=\"Patrick Bateman meets Sparkle Beach Ken\"}\"",
     "title": "Patrick Bateman Meets Sparkle Beach Ken Prompt",
     "description": "A simple, humorous prompt requesting an image of a singular man who visually embodies a blend of the fictional characters 'Patrick Bateman' (American Psycho) and 'Sparkle Beach Ken' (Barbie doll).",

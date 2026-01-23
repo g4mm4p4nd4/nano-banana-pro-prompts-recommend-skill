@@ -1,5 +1,34 @@
 [
   {
+    "content": "a sloth, a tuna, an F-15J in the style of a video game wiki website's page",
+    "title": "Video Game Wiki Style Image Generation",
+    "description": "A prompt for testing Google Gemini's image generation capabilities, specifically requesting a combination of a sloth, a tuna, and an F-15J fighter jet rendered in the distinct style of a video game wiki website's page.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769149370717_qz2tpi_G_Pe43abcAAkEI6.jpg",
+      "https://cms-assets.youmind.com/media/1769149370646_rvz9it_G_Pe3ydbEAAqCA5.jpg",
+      "https://cms-assets.youmind.com/media/1769149370795_cqzrkw_G_Pe527asAA1Cmo.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "A logo mark for a company named \"{argument name=\"company name\" default=\"Lovart\"}\" with a base color gradient of vibrant {argument name=\"color 1\" default=\"emerald green\"} and vibrant {argument name=\"color 2\" default=\"blue\"}\n\nGenerate a color palette and font design guidelines from this logo mark\n\nGenerate the application UI design for this service. PC version and smartphone version\n\nDesign a website to introduce this service. PC version and smartphone version\n\nDesign image of an exhibition booth for this service\n\nMerchandise design for this service. T-shirt, hoodie, cap, notebook, sticker",
+    "title": "Multi-Step Design Generation Prompts for 'Lovart' Brand",
+    "description": "A comprehensive, multi-step workflow using design agent 'Lovart' (likely integrated with Nano Banana Pro) to generate a complete brand identity, starting from a logo and extending to design guidelines, UI, website, exhibition booth, and merchandise. This demonstrates a structured approach to design generation.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769149373823_avjhxj_G_QiCWtawAAkGgW.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "{\n  \"edit_type\": \"precise_composite_overlay_dual_interaction_english_ui\",\n\n  \"source\": {\n    \"_hint\": \"Base Logic: Character sitting on Background. Background is fixed EXCEPT for the specific text on the button.\",\n    \"mode\": \"IMAGE_COMPOSITION\",\n    \"reference_images\": {\n      \"foreground\": \"character_ref_image\",\n      \"background_canvas\": \"profile_page_screenshot\"\n    },\n    \"consistency\": {\n      \"character_fidelity\": \"high\",\n      \"background_structure\": \"rigid_layout_preservation\"\n    }\n  },\n\n  \"ui_text_enforcement\": {\n    \"_hint\": \"CRITICAL: Ensure the button text reads 'Follow' in English, regardless of the text in the original screenshot.\",\n    \"target_element\": \"action_button_top_right\",\n    \"mandatory_text\": \"Follow\",\n    \"language\": \"English\",\n    \"font_style\": \"sans_serif_bold_legible\",\n    \"correction_policy\": \"overwrite_original_text_if_not_follow\"\n  },\n\n  \"background_preservation\": {\n    \"_hint\": \"Background is a rigid floor. Only allow changes to shadows and the button text.\",\n    \"policy\": \"strict_pixel_retention_mostly\",\n    \"allowed_modifications\": [\n      \"realistic_contact_shadows_under_character\",\n      \"replacement_of_button_text_to_Follow\"\n    ]\n  },\n\n  \"camera_and_lighting\": {\n    \"_hint\": \"Character sitting ON the interface.\",\n    \"perspective\": \"high_angle_looking_down\",\n    \"grounding_effect\": {\n      \"technique\": \"contact_shadows_under_legs\",\n      \"placement\": \"on_background_surface\"\n    }\n  },\n\n  \"pose\": {\n    \"_hint\": \"Dual pointing: Left Hand -> Name, Right Hand -> 'Follow' Button.\",\n    \"pose_style\": \"sitting_cross-legged_or_kneeling\",\n    \"head_position\": \"tilted_back_looking_at_camera\",\n    \"hands_configuration\": {\n      \"s",
+    "title": "Promo Effect v2.0 Prompt for Profile Screenshot Composition",
+    "description": "A technical prompt structure for Nano Banana Pro's 'Promo Effect v2.0' feature, designed to composite a character image onto a user's profile screenshot. The prompt enforces specific rules, such as ensuring the 'Follow' button text is present, maintaining background structure, and defining the character's pose (sitting, pointing to the account name and the 'Follow' button). This prompt is highly specialized for UI manipulation and image composition.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769149375646_t0hcun_G_QABb-XgAAft2D.jpg"
+    ],
+    "needReferenceImages": true
+  },
+  {
     "content": "Conceptual storytelling visual for a modern brand narrative.\nAbstract progression elements,\nsense of movement and flow,\nsoft cinematic lighting,\noptimistic, forward-moving tone,\ncrafted to communicate journey and growth.",
     "title": "Conceptual brand storytelling visual prompt",
     "description": "A concise prompt for generating a conceptual visual that communicates a brand narrative focused on journey and growth. It specifies abstract progression elements, a sense of movement, soft cinematic lighting, and an optimistic, forward-moving tone.",
