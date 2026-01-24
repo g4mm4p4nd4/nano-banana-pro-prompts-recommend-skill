@@ -12,12 +12,72 @@
     "needReferenceImages": true
   },
   {
-    "content": "{\n  \"vibe_title_en\": \"The Mental Orbit\",\n  \"master_prompt\": \"A hyper-realistic medium shot of The Protagonist standing in a cavernous, dimly lit brutalist concrete chamber. The concept is 'Endless Ideas' visualized as a surreal kinetic sculpture. The subject is surrounded by dozens of floating, chrome spheres and jagged mirror fragments of varying sizes that orbit their head like a planetary ring. These objects must look like high-end practical effects, with realistic weight and reflection, not digital overlays. The subject gazes intensely at a single crystal prism hovering just above their open palm, which refracts a spectrum of light onto their face. Shot on a Hasselblad H6D-100c with an 80mm f/2.8 lens. The lighting is moody and directional, creating deep shadows and bright specular highlights on the chrome surfaces. Texture is rich with film grain (Kodak Vision3 500T), emphasizing the contrast between the smooth metal and the porous skin texture of the subject. No neon, just cold tungsten and daylight tones.\",\n  \"meta\": {\n    \"intent\": \"Surrealist Portraiture\",\n    \"priorities\": \"Photorealism, Physicality of Surreal Elements, Texture\",\n    \"device_profile\": \"High-Resolution Cinema Display\"\n  },\n  \"frame\": {\n    \"aspect\": \"4:5\",\n    \"composition\": \"Center-weighted subject with chaotic orbital elements filling the negative space\",\n    \"layout\": \"Symmetrical subject anchoring asymmetrical floating props\",\n    \"camera_angle\": \"Eye-level\",\n    \"tilt_roll_degrees\": \"0\"\n  },\n  \"subject\": {\n    \"gender\": \"{argument name=\"gender\" default=\"Female\"}\",\n    \"identity\": \"The Intellectual Protagonist\",\n    \"demographics\": \"Universal/Ageless\",\n    \"face\": \"Neutral, highly focused gaze, micro-expressions of wonder\",\n    \"hair\": \"Natural texture, slightly windblown by the static energy of the room\",\n    \"body\": \"Static posture, hands raised slightly to interact with levitating objects\",\n    \"expression\": \"Intense concentration, mouth slightly parted\",\n    \"pose\": \"Standing still, resembling a conductor of the floating elements\"\n  },\n  \"wardrobe_accessories\": {\n    \"garments\": [\n      {\n        \"item\": \"Turtleneck Sweater\",\n        \"material\": \"Fine Cashmere or Merino Wool\",\n        \"color\": \"{argument name=\"sweater color\" default=\"Charcoal Grey\"} or Deep Navy\",\n        \"fit\": \"Fitted, textured\"\n      },\n      {\n        \"item\": \"Tailored Trousers\",\n        \"material\": \"Wool Blend\",\n        \"color\": \"Black\",\n        \"fit\": \"Straight leg\"\n      }\n    ],\n    \"accessories\": [\n      {\n        \"item\": \"None\",\n        \"color\": \"N/A\",\n        \"material\": \"N/A\",\n        \"brand_style\": \"Minimalist\"\n      }\n    ]\n  },\n  \"environment\": {\n    \"setting\": \"Brutalist Concrete Chamber (Void Space)\",\n    \"surfaces\": \"Raw concrete, polished chrome, glass shards\",\n    \"depth\": \"Deep background fading into shadow, sharp focus on subject and immediate floating objects\",\n    \"atmosphere\": \"Cold, sterile air, suspended dust motes, quiet intensity\",\n    \"lens_interaction\": \"Reflections of the room visible in the floating spheres\"}",
-    "title": "The Mental Orbit: Hyper-realistic Surrealist Portraiture",
-    "description": "A highly detailed, structured prompt designed for hyper-realistic surrealist portraiture. It specifies a medium shot of a protagonist in a brutalist concrete chamber, surrounded by orbiting chrome spheres and mirror fragments, visualizing 'Endless Ideas.' The prompt includes extensive details on lighting, texture (Kodak Vision3 500T film grain), composition, subject appearance, and wardrobe, aiming for a high-end practical effects look rather than a digital overlay.",
+    "content": "Generate custom illustrations on demand",
+    "title": "Instruction to Generate Custom Illustrations",
+    "description": "A simple instruction prompt for Nano Banana to generate custom illustrations on demand.",
     "sourceMedia": [
-      "https://cms-assets.youmind.com/media/1769149394084_1ol6z0_G_U5PwMXwAAAf15.jpg",
-      "https://cms-assets.youmind.com/media/1769149395360_xi55rp_G_U5P0UWwAAYWGO.jpg"
+      "https://cms-assets.youmind.com/media/1769236045789_eq15bp_G_YGVd0WsAAqyXu.jpg",
+      "https://cms-assets.youmind.com/media/1769236045807_vznt2h_G_YDN0tXsAAHfoK.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Transformers --ar 4:5 --sref 1383516477\n--sw 100 --stylize 300 --v 6.1",
+    "title": "Midjourney Prompt for Transformers",
+    "description": "A Midjourney prompt provided as an example of using Nano Banana Pro to transform a robot image into a vehicle, although the prompt itself is a standard Midjourney text prompt for Transformers with specific aspect ratio and stylization settings.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769235955225_80resa_G_WLURoXkAM1Ixd.jpg"
+    ],
+    "needReferenceImages": true
+  },
+  {
+    "content": "Depict {argument name=\"subject\" default=\"[SUBJECT]\"} using Bauhaus-inspired minimalism: strict geometry, primary or near-primary colors, balanced proportions, and functional design. The composition should feel timeless, rational, and visually bold while remaining simple and clean.",
+    "title": "Bauhaus Geometry Minimal Illustration Template",
+    "description": "A simple, effective prompt template for generating illustrations in the Bauhaus style, focusing on strict geometry, primary colors, balanced proportions, and functional design. The user needs to specify the subject to be depicted.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769235959392_hye7gk_G_V0EdxaUAACK44.jpg",
+      "https://cms-assets.youmind.com/media/1769235959363_ioi4jz_G_V0Ec7b0AEyd-j.jpg",
+      "https://cms-assets.youmind.com/media/1769235960283_0g10lm_G_V0EdwasAA0DFQ.jpg",
+      "https://cms-assets.youmind.com/media/1769235960808_5c11f5_G_V0EhSbAAIoBzZ.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "{\n  \"intent\": \"A monumental, vertiginous composition of a continental-scale tectonic rift where a massive, deep-sea ocean current terminates at a perfect geometric precipice, cascading into a bottomless atmospheric void filled with tiered cloud layers and lightning.\",\n  \"frame\": {\n    \"aspect_ratio\": \"21:9 ultra-widescreen\",\n    \"composition\": \"The frame utilizes a vanishing point perspective that follows the literal edge of the world into infinity. The top-left quadrant is dominated by the dark, churning Atlantic-scale ocean, while the right and bottom sections reveal the terrifying scale of the vertical drop into a hazy, multi-layered cloud abyss.\",\n    \"style_mode\": \"Raw_photorealism with hyper-accurate fluid dynamics and atmospheric Rayleigh scattering to establish immense scale.\"\n  },\n  \"subject\": {\n    \"identity\": \"The ruins of an ancient, megalithic limestone bridge, four kilometers in width, which once spanned the gap but now ends abruptly in a jagged, fractured edge at the precipice.\",\n    \"wardrobe\": \"A tiny, barely visible research vessel is positioned near the edge of the falling water, providing a critical sense of gargantuan scale through size comparison.\",\n    \"placement\": \"The ruined structure is anchored into the basalt bedrock of the 'continental shelf' that forms the world's end.\"\n  },\n  \"environment\": {\n    \"location\": \"The 'Great Sheer'—a non-Euclidean geographic terminus where the planet's crust simply ceases, revealing a vertical cross-section of geological strata before descending into the troposphere.\",\n    \"atmosphere\": \"Extreme atmospheric depth, with visible 'cloud falls' where moisture from the ocean drop condenses into secondary weather systems thousands of meters below the primary sea level.\",\n    \"weather\": \"Violent updrafts from the abyss creating spray-vortices at the edge, while the distant depths of the rift are illuminated by internal, cloud-to-cloud lightning.\"\n  },\n  \"camera\": {\n    \"sensor_format\": \"Large format digital (Phase One IQ4 150MP), optimized for maximum per-pixel detail and wide dynamic range in the deep shadows of the chasm.\",\n    \"lens\": \"14mm ultra-wide-angle rectilinear lens to exaggerate the perspective distortion and the sheer scale of the verticality.\",\n    \"camera_position\": \"A cantilevered perspective, positioned several hundred meters out into the void, looking back toward the edge of the world and the falling ocean.\",\n    \"aperture_depth_of_field\": \"f/11 to ensure the texture of the falling water in the foreground and the distant geological strata are captured with clinical sharpness.\"\n  },\n  \"lighting\": {\n    \"type\": \"Harsh, high-altitude sun positioned at a 45-degree angle, creating deep, well-defined shadows within the craters and crevices of the vertical cliff face.\",\n    \"color_temperature\": \"5400K (neutral daylight), with a significant shift toward 12000K (deep sky blue) in the shadowed depths of the abyss due to atmosph",
+    "title": "Ultra-Widescreen Tectonic Rift and World's End Scene Prompt in JSON",
+    "description": "A complex JSON prompt for Nano Banana Pro to generate a monumental, ultra-widescreen (21:9) scene of a continental-scale tectonic rift where an ocean cascades into a bottomless atmospheric void. The prompt details non-Euclidean geography, atmospheric effects, and camera specifications (14mm ultra-wide lens, large format sensor) to achieve raw photorealism and immense scale.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769235982535_5saprx_G_Uz1xBbAAEqjsP.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "A surreal, photorealistic scene of a tiny adult man crouching barefoot on a green plastic bottle cap, cupping his hands to drink water pouring from the mouth of an enormous green plastic bottle. The bottle lies on its side atop a mossy stone ledge, releasing a steady stream of clear water. The setting is outdoors on a wet stone pathway with shallow puddles, soft reflections, and lush green trees blurred in the background. Cinematic depth of field, natural daylight, ultra-detailed textures, realistic water droplets, whimsical scale contrast, high realism, 8k quality.",
+    "title": "Surreal Whimsical Scale Contrast Scene Prompt",
+    "description": "A prompt for Nano Banana Pro to generate a surreal, photorealistic scene with extreme scale contrast. It depicts a tiny adult man crouching on a bottle cap, drinking water pouring from the mouth of an enormous green plastic bottle, set outdoors on a wet stone pathway with cinematic depth of field.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769235987338_c76kqq_G_ShsTGWkAA-US2.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "circle the part where the pick-up line goes off the rails and explain the issue in a footnote",
+    "title": "Text Analysis Prompt for Identifying Issues in a Pick-Up Line",
+    "description": "A text-based prompt for Nano Banana Pro (likely functioning as an LLM) instructing it to analyze a provided pick-up line, identify the point where it 'goes off the rails,' and explain the issue in a footnote.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769235976921_fit60t_G_TtMhXXAAAGE_P.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Dark cinematic lighting. Floating particles. Hyper-realistic textures.",
+    "title": "Dark Cinematic Food Photography Prompt Formula",
+    "description": "A prompt formula designed for dramatic food photography suitable for restaurant menus and social ads. It emphasizes dark cinematic lighting, floating particles, and hyper-realistic textures to create visually striking images that convert.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769236004952_zz1q3b_G_TnTzVWsAAbyho.jpg",
+      "https://cms-assets.youmind.com/media/1769236005015_rmhtdq_G_TnTzRXYAA4V4f.jpg",
+      "https://cms-assets.youmind.com/media/1769236005408_eu5yeq_G_TnT1XWsAAL2Q2.jpg",
+      "https://cms-assets.youmind.com/media/1769236006737_jz814x_G_TnTwEWoAA6JQK.jpg"
     ],
     "needReferenceImages": false
   },

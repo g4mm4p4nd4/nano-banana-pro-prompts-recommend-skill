@@ -1,5 +1,45 @@
 [
   {
+    "content": "1. Extreme close-up\n2. Low-angle\n3. Ground level view\n4. Back-to-the-camera",
+    "title": "Nano Banana Pro Scene Shot Prompts",
+    "description": "A list of four specific camera angles or shot types used as prompts for generating scene images with Nano Banana Pro, including extreme close-up, low-angle, ground level, and back-to-the-camera views.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769236042895_azikpa_G_W2i5SXkAAtiug.jpg",
+      "https://cms-assets.youmind.com/media/1769236042805_vpjoh4_G_W2i5fXwAA0_JA.jpg",
+      "https://cms-assets.youmind.com/media/1769236042904_58jiwd_G_W2i5rXgAAllWR.jpg",
+      "https://cms-assets.youmind.com/media/1769236044088_j7re22_G_W3_PkXYAABKXS.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Show the transitional process of this Transformer robot transforming into a tank in 6 (3 x 2) step-by-step process. Use same style without outlines",
+    "title": "Transformer Robot to Tank Transition Prompt",
+    "description": "A prompt for generating a 6-step transitional process image, showing a Transformer robot transforming into a tank. It specifies a 3x2 layout and requires maintaining the same style without outlines.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769236008713_nnsqsw_G_WLHZhXAAA_Bdr.jpg"
+    ],
+    "needReferenceImages": true
+  },
+  {
+    "content": "Respecting the collaboration between Wizardry and Genba Neko (site cat), I urgently replaced the planned post content!\n\nBecause I specified a \"cat-human character,\" the third panel shows five fingers + paw pads, which is typical of AI output, but since a cat's paw can't make an OK sign, this is fine!",
+    "title": "Wizardry x Genba Neko Collaboration Image",
+    "description": "A user generated a 'Wizardry x Genba Neko' (site cat) collaboration image using Nano Banana, specifically requesting a 'cat-human character.' The resulting image shows the character giving an 'OK' sign, which required five fingers and paw pads, highlighting a specific AI output characteristic.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769236037149_gv12ts_G_WHtmfWgAAK70H.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Create a brand visual storyboard for presenting your product with Nano Banana Pro:",
+    "title": "Prompt for Visual Storyboard Creation",
+    "description": "A call to action for users to receive a prompt designed to create a brand visual storyboard for product presentation using Nano Banana Pro, often shared upon request.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769236041775_9t1xug_G_Vo48obAAEqLl7.jpg",
+      "https://cms-assets.youmind.com/media/1769236041776_p5rv2q_G-3QbGvX0AEEEEI.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
     "content": "Output image is 2x2 four-panel split\nVideo Style: {argument name=\"video style\" default=\"2000s Japanese Anime OVA style\"}\nBackground:\nLate-night city streets. Gaps between deserted roads and skyscrapers. Black liquid splattered from a giant monster adheres to the asphalt and walls. Dust and sparks are flying.\n\nCharacter 1:\nHigh school girl with long black hair. Wearing a sailor uniform. A Japanese sword is sheathed and hanging at her waist. She looks around cautiously, adopting a low stance.\nCharacter 2:\nHigh school girl with blonde bob hair. Wearing a blazer uniform. Standing behind her companion, holding one hand ready to use her ability at any moment. Her expression is tense.\nEnemy Presence:\nBlack liquid gathers and transforms into a humanoid entity with a fibrous, thread-like texture. Its face is vague, its limbs are unnaturally long, and it crawls across the ground and walls with unnatural movements.\n\nCut 1:\nClose-up of the ground. Filled with black liquid. Flying dust and sparks\nCut 2:\nMedium shot. The humanoid anomaly, rising from the black liquid, awkwardly begins to stand up. Thread-like shadows droop, dragging on the ground.\nCut 3:\nLow-angle wide shot. Multiple anomalies appear one after another from the roads and walls, encircling the girls in a circle. The cityscape emphasizes the feeling of being surrounded.\nCut 4:\nShot over the girls' backs. In front of them is a horde of black humanoids closing in. The black-haired girl rests her hand on the sheath, and the blonde-haired girl prepares to activate her ability.\nThe composition emphasizes the tension right before the battle.",
     "title": "2000s OVA Style High School Girl Monster Hunt",
     "description": "A detailed, multi-part prompt designed for Nano Banana Pro to generate a four-panel sequence in the style of a 2000s Japanese Anime OVA. The scene depicts two high school girls confronting amorphous, liquid-based monsters in a deserted city at night, focusing on tension and composition.",

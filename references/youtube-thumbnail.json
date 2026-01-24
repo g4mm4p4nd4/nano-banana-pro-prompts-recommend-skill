@@ -1,5 +1,14 @@
 [
   {
+    "content": "I tried creating a \"Weekly Magazine\" style using the magazine cover prompt",
+    "title": "Magazine Cover Prompt using Nano Banana Extension",
+    "description": "A user demonstrates using a Chrome extension for Nano Banana to easily access various prompts, including a 'magazine cover' prompt, which they used to create a 'Weekly Magazine' style image, suggesting its utility for social media design.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769236039813_e8v3j0_G_T9M_TagAA54Xy.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
     "content": "Use the transcript of this video as a prompt to have Nano Banana create an eyecatch image",
     "title": "Eyecatch Image Generation from Video Transcript",
     "description": "A user generated an eyecatch image using Nano Banana based on a video transcript, noting that image generation AI might replace manual creation in Canva.",

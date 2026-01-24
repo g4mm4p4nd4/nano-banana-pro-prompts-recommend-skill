@@ -1,5 +1,51 @@
 [
   {
+    "content": "Eye-level food image,two golden Belgian waffles on a plump white plate,topped with fresh raspberries and blueberries,with maple syrup dripping and dripping onto the plate,surrounded by more raspberries,soft natural light,and shallow depth of field.",
+    "title": "Eye-Level Belgian Waffles Food Photography Prompt",
+    "description": "A food photography prompt for generating an eye-level image of golden Belgian waffles topped with fresh raspberries and blueberries. It emphasizes maple syrup dripping, soft natural light, and a shallow depth of field.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769236053833_yjclhv_G_YjLiiXcAEVMpy.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Macro food photography of a juicy beef burger with melted cheddar cheese dripping down the side, glistening grease, a toasted brioche bun, and fresh water droplets on the lettuce. Steam is gently rising. Wooden table background, window lighting. Aspect ratio 6:9",
+    "title": "Macro Beef Burger Food Photography Prompt",
+    "description": "A macro food photography prompt focusing on a juicy beef burger with melted cheddar cheese dripping, glistening grease, and fresh water droplets on the lettuce. It specifies a toasted brioche bun, steam, wooden table background, and window lighting.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769236055214_1nzjlw_G_YjDX1XcAEsxAa.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "{\n  \"scene\": {\n    \"type\": \"studio product photo\",\n    \"background\": {\n      \"color\": \"{argument name=\"background color\" default=\"pastel pink\"}\",\n      \"surface\": \"smooth\"\n    },\n    \"lighting\": {\n      \"key\": \"soft diffused\",\n      \"rim\": \"subtle\"\n    },\n    \"camera\": {\n      \"lens\": \"85mm\",\n      \"depth_of_field\": \"shallow\"\n    }\n  },\n  \"subject\": {\n    \"type\": \"beverage can\",\n    \"brand\": \"{argument name=\"brand name\" default=\"BOBAco Popping Bubble Tea\"}\",\n    \"color\": \"white\",\n    \"position\": \"centered\",\n    \"details\": {\n      \"condensation\": true,\n      \"focus\": \"label\"\n    },\n    \"garnish\": {\n      \"main\": {\n        \"type\": \"raspberry\",\n        \"position\": \"on can rim\"\n      },\n      \"foreground\": {\n        \"type\": \"raspberries\",\n        \"quantity\": \"multiple\",\n        \"ripeness\": \"ripe\"\n      }\n    }\n  },\n  \"style\": {\n    \"aesthetic\": \"clean minimal\",\n    \"photography\": \"premium commercial beverage\",\n    \"post_processing\": \"high-end retouching\",\n    \"text\": false,\n    \"watermark\": false\n  }\n}",
+    "title": "Studio Product Photo Prompt for Boba Tea Can (Duplicate)",
+    "description": "A detailed JSON prompt designed for generating a premium commercial studio product photograph of a beverage can, specifically BOBAco Popping Bubble Tea. The prompt specifies a clean, minimal aesthetic with a pastel pink background, soft diffused lighting, and shallow depth of field, focusing on hyper-realistic details like condensation and fresh raspberries as garnish.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769236008629_0cmhs1_G_WHO2MaAAAIvDX.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "“task_description”:\n“Generate a flagship-level brand identity mockup supporting full categories”\n“prompt_structure”: {\n“subject”:\n“Flat lay of a large-scale, ultra-detailed brand ecosystem”\n“brand_info”: {\n“{argument name=\"brand name\" default=\"Lovart\"}”,\n“visual_theme”: “{argument name=\"visual theme\" default=\"Japanese Christmas, minimalism, warm tones\"}”\n},\n“item_categories”: {\n“packaging”: \"Shopping bags (S/M/L), cake box, coffee bean pouch, sandwich wedge box, pastry box\",\n“dining_essentials”: \"Sleeved coffee cup, paper napkin, sugar packet, tray liner paper, menu board\",\n“staff_uniform”: \"Folded green apron, embroidered baseball cap, staff name tag\",\n“merchandise”: \"Canvas tote bag, ceramic mug, branded notebook, ballpoint pen\"\n},\n“visual_style”: {\n“art_style”: “Clean vector mockup with realistic texture mapping”,\n“color_palette”: \"Forest green (main), matte white (sub), craft paper brown (texture), beige (accent)\",\n“logo_style”: “Minimal line art deer logo”\n},\n“composition”: {“type”: “Dense, no-overlap arrangement”,\n“background”: “Solid dark charcoal (#1A1A1A)”,\n“perspective”: “90-degree top-down (orthographic view)”}\n“negative_prompt”:“Cluttered, messy, overlapping, 3D perspective distortion, excessive photorealistic reflection, glossy plastic, neon colors, human hands, watermark, low resolution”\n“generation_params”: {\n“aspect_ratio”: “3:4”,\n“detail_level”: “High”,\n“texture_quality”: “Premium”}",
+    "title": "Flagship Brand Identity Mockup (Nano Banana Pro)",
+    "description": "A highly structured, detailed prompt for Nano Banana Pro to generate a comprehensive, flat-lay mockup of a flagship brand ecosystem (Lovart), including packaging, dining essentials, staff uniform, and merchandise, using a specific Japanese Christmas/minimalism visual theme.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769236034649_tx34lj_G_VgYm5bEAAKtxW.jpg",
+      "https://cms-assets.youmind.com/media/1769236034854_whekav_G_Vnq6bbAAgL_Ru.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "A surreal zero-gravity product video featuring a strawberry soda can floating in a soft red-pink studio space.\n\nSCENE 1 — SPACE FLOATING INTRO:\nThe soda can is suspended mid-air, slightly tilted, with no visible gravity. Surrounding it are strawberries, ice cubes, and flowing red liquid, all drifting slowly as if in outer space. No object is falling — everything floats gently in different directions.",
+    "title": "Zero-Gravity Product Video Prompt (Strawberry Soda)",
+    "description": "A prompt for generating a surreal, zero-gravity product video featuring a strawberry soda can. The scene is set in a soft red-pink studio space where the can, strawberries, ice cubes, and liquid all float slowly, emphasizing a weightless, outer space aesthetic for the product shot.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769235995156_76im06_G_U0e55a4AAMRZK.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
     "content": "Place 9 panels of [ratio] size in a [4:5] ratio on a clean 3x3 [ratio] storyboard grid.\n\nUse the reference image as the base image for the product. The product, packaging design, branding, materials, colors, ratio, and overall identity must be exactly the same as the reference image. The product must be clearly recognizable in all frames. Labels, logos, and ratios must be exactly the same.\n\nThis storyboard is a high-end designer mock-up presentation for a branding portfolio. It focuses on shape, composition, material, and visual rhythm, not realism or lifestyle narratives. The overall look should convey a curated, edited, and design-driven impression.\n\nFrame 1:\nA hero shot of the product taken from the front in a clean studio setup. Neutral background, balanced composition, calm and confident product presentation.\n\nFrame 2:\nA close-up shot focused on the center of the product. Focus on surface texture, material, and printing details.\n\nFrame 3:\nThe reference product placed in an environment that naturally blends into the brand and product category. Studio setting inspired by the product's design elements and colors.\n\nFrame 4:\nA scene showing the product being used or interacted with against a neutral studio background. Hands and interaction elements are minimized, with an appearance that matches the packaging style.\n\nFrame 5:\nAn isometric composition with multiple products viewed from the top, arranged in precise geometric order. All products are viewed from the same top isometric perspective, evenly spaced, clean, and graphic.\n\nFrame 6:\nThe product is slightly tilted and floating against a neutral background that matches the reference image's color palette. The product floats naturally in space due to the intentionally angled floating.\n\nFrame 7:\nAn extremely close-up shot focusing on specific details such as labels, edges, textures, or material behavior.\n\nFrame 8:\nThe product is in an unexpected yet aesthetically powerful setting, giving a bold, editorial, and visually striking impression.\n\nUnexpected yet highly stylized setting. Studio-based, designer-led production. Bold composition that enhances the brand image.\n\nFrame 9:\nA wide composition showing the product in use within a sophisticated designer setting. Minimal props, controlled styling, and consistency with the rest of the series.\n\nCamera and Style:\nUltra-high quality studio photography with a realistic camera look. Different camera angles and framing for each frame. Depth of field, accurate lighting, precise materials and reflections. The lighting logic, color palette, mood, and visual language must be consistent across all nine panels, unifying them as a single series.\n\nOutput:\nA clean 3x3 grid without borders, text, captions, or watermarks.",
     "title": "Detailed Storyboard Prompt for Brand Visuals",
     "description": "A highly detailed, multi-frame prompt designed for Nano Banana Pro to generate a clean, professional 3x3 storyboard grid for a branding portfolio. It emphasizes consistency in product identity, color, and ratio across all nine frames, focusing on composition, material, and visual rhythm rather than narrative.",
