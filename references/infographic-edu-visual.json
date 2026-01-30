@@ -51,6 +51,47 @@
     "needReferenceImages": false
   },
   {
+    "content": "I am considering getting a pet dog but am still struggling to choose a breed. Please help me generate an infographic that centrally displays the characteristics, temperament, common health issues, and feeding guide for the following potential breeds: {argument name=\"breeds\" default=\"Golden Retriever, Poodle, Corgi\"}. The infographic needs to be clear and easy to compare.",
+    "title": "Universal Pet Feeding Guide Generator",
+    "description": "This is a text prompt designed for Gemini/NanoBanana Pro to generate a concentrated infographic summarizing the characteristics and care requirements of different pet breeds, specifically dogs, to help in the decision-making process for new pet owners.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755036199_pl0x6k_G_4_P09bUAILbO0.jpg",
+      "https://cms-assets.youmind.com/media/1769755036137_l69ofs_G_4_OGMaYAAiOFt.jpg",
+      "https://cms-assets.youmind.com/media/1769755036185_bf0sws_G_4_OGRbUAEmiYk.jpg",
+      "https://cms-assets.youmind.com/media/1769755038117_4ftxb9_G_4_P0-bsAAvhsv.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Minimal abstract illustration.\nFlat but layered vector-style shapes,\nprecise curves, consistent stroke logic,\nlimited color palette with high harmony,\nbalanced spacing and alignment,\ndesigned to feel systemized and scalable,\nlike a mature brand illustration set.",
+    "title": "Minimal Abstract Vector Illustration Style",
+    "description": "A prompt designed for generating premium, systemized abstract illustrations. It specifies the use of flat, layered vector-style shapes, precise curves, consistent stroke logic, a limited color palette with high harmony, and balanced alignment, suitable for mature brand illustration sets.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769754984184_7oa9j9_G_dLLRsXYAAyW5x.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "HUMAN BODY ultra-clean anatomy infographic",
+    "title": "Ultra-Clean Anatomy Infographic Prompt",
+    "description": "A concise prompt for generating an ultra-clean, detailed anatomy infographic of the human body, likely used for educational or medical visualization purposes.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755028900_kymjo9_G_0ZTewbUAEm8d7.jpg",
+      "https://cms-assets.youmind.com/media/1769755029098_tuzpxx_G_0ZTfebUAIrVJX.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Use the uploaded image as the sole source of truth.\nDo NOT assume model, specs, or performance.\n\nPure white, distraction-free background.\n\nTop-left: PORSCHE (modern sans-serif).\nLeft column: auxiliary views\n(front / side / rear / detail).\nRight side: large photorealistic hero render.\n\nVisually analyze only what is visible.\nIdentify distinct physical components.\nLabel each component with hairline-thin vector lines.\nUse neutral, factual terms only.\nNo marketing language.\nNo hallucinated features.\nNo assumed performance.\n\nScandinavian, modern, industrial documentation style.\nSoft studio lighting.\nUltra-high resolution.\nExact proportions and geometry fidelity.",
+    "title": "Technical Product Documentation Prompt (Porsche)",
+    "description": "A highly specific, technical prompt for Gemini Nano Banana Pro designed to generate a detailed, analytical product documentation image (e.g., for a Porsche). It mandates using an uploaded image as the sole source of truth, requires a pure white background, auxiliary views, component labeling with vector lines, and a Scandinavian industrial documentation style, strictly forbidding marketing language or assumed features.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755054850_5qi4l1_G_z_nnwbUAEpHIC.jpg",
+      "https://cms-assets.youmind.com/media/1769755054812_vtq6wr_G_0DaH1bYAARy-1.jpg"
+    ],
+    "needReferenceImages": true
+  },
+  {
     "content": "Generate image, 1. Style Core Parameter Extraction (Style Guide)\nPlease refer to the following parameters:\nColor Palette:\nBackground: Pure white (#FFFFFF)\nLines/Borders: Dark gray or pure black (#333333 or #000000)\nText: Dark gray (#333333), regular weight, no bold.\nFill: No fill (transparent) or pure white fill, to cover lines behind.\nLines/Connectors:\nType: Orthogonal/Elbow lines, meaning only vertical and horizontal lines, with right-angle corners.\nThickness: Extremely thin (1px).\nArrow: Solid small triangle (Solid Arrowhead), black.\nShapes:\nNormal Node: Rounded Rectangle, very small corner radius (approx. 4px - 8px).\nDecision Node: Diamond.\nStart/End: Capsule shape or rectangle with larger rounded corners.\nTypography:\nAlignment: Center aligned.\nFont: Sans-serif font, such as Arial, Roboto, or Source Han Sans. Small font size (approx. 12px-14px).\n\nApply the style above along with your user journey/process to Gemini, and it will present the corresponding effect without needing adjustments.",
     "title": "Minimalist Flowchart/Diagram Generation Style Guide",
     "description": "A detailed style guide prompt for Nano Banana Pro to generate minimalist, clean flowcharts or diagrams. It specifies color palette, line types (orthogonal), shapes (rounded rectangles, diamonds), and typography to ensure a professional, consistent, and easily readable infographic style.",

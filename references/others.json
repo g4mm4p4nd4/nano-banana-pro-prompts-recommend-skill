@@ -12,6 +12,53 @@
     "needReferenceImages": true
   },
   {
+    "content": "Design the world with text and visual prompts",
+    "title": "Project Genie World Design Prompt",
+    "description": "A high-level description of the prompt mechanism used in 'Project Genie' to design and generate virtual worlds, utilizing Nano Banana Pro for image previews.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755045879_vza3x3_G_2KNi3WMAAzkh2.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Take the world view created in Midjourney and shift it towards a 'little devil' direction using Nanobanana.",
+    "title": "Style Transfer from Midjourney to Nanobanana",
+    "description": "This tweet describes a workflow where a world view created in Midjourney is input into Nanobanana, and Nanobanana is prompted to shift the character's personality towards a 'little devil' style while maintaining the original atmosphere and color palette. This demonstrates Nanobanana's strength in maintaining world consistency while applying character transformations.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755050241_huzs3b_G_1Sxt-aMAAQ8lU.jpg",
+      "https://cms-assets.youmind.com/media/1769755050316_zx2yrw_G_1SxtKbUAANYWD.jpg"
+    ],
+    "needReferenceImages": true
+  },
+  {
+    "content": "A prompt that searches for lyric information and generates an image when the title and artist name are described and a reference image is uploaded.",
+    "title": "Music Image Visualization Prompt (Lyrics Focus)",
+    "description": "A prompt structure designed to visualize music based purely on lyrics and a provided reference image, rather than relying on album art or PVs. The user created this prompt using Gemini to search for lyrics based on the song title and artist.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755045648_yhou9b_G_0-2FbbUAIizuG.jpg"
+    ],
+    "needReferenceImages": true
+  },
+  {
+    "content": "Generate \"{argument name=\"concept\" default=\"The Watcher\"}\" in nano banana",
+    "title": "Generating 'The Watcher' in Nano Banana",
+    "description": "A prompt used in Nano Banana to generate the concept of 'The Watcher' (見る人). The resulting image included a river, which the user found to be a reasonable interpretation of the concept.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755050918_mektmf_G_zChUdakAAiBVZ.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Move the camera along the Z axis by {argument name=\"degrees\" default=\"90\"} degrees.",
+    "title": "3D Camera Position Control Prompt",
+    "description": "This tweet demonstrates a technique for controlling the camera position in Nano Banana Pro using 3D editor knowledge and coordinate systems, providing a simple instruction to move the camera along the Z axis.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755018100_751dva_G_ygojYbUAMwj8p.jpg",
+      "https://cms-assets.youmind.com/media/1769755018179_b0mbmf_G_ygpf1WwAEJbRz.jpg"
+    ],
+    "needReferenceImages": true
+  },
+  {
     "content": "{\n  \"prompt\": \"A surreal, artistic portrait of a woman dancing gracefully in front of a dark black background, with large red flower petals projected across her body and surrounding space. A luminous red flower blooms behind and partially overlaps her silhouette, blending seamlessly with her movement. Her eyes are closed, expression calm and introspective, arms raised above her head in a fluid, dance-like pose. She wears a semi-transparent, modern top that allows the red floral projections to interact with her form. The lighting is dramatic and soft, with high contrast between the deep black background and the vivid red flower tones. The composition feels like fine art photography mixed with contemporary dance and projection mapping. Dreamlike, emotional, and poetic atmosphere. Ultra-detailed textures, soft shadows, smooth motion blur, gallery-style surrealism.\",\n  \n  \"negative_prompt\": \"low resolution, harsh lighting, flat colors, cluttered background, overexposure, plastic skin, distorted anatomy, extra limbs, cartoon style, illustration, watermark, logo, text\",\n  \n  \"style\": {\n    \"aesthetic\": \"surreal fine art photography, projection art\",\n    \"mood\": \"poetic, emotional, introspective\",\n    \"color_palette\": [\"deep red\", \"crimson\", \"black\", \"soft skin tones\"]\n  },\n  \n  \"camera\": {\n    \"shot_type\": \"full body or medium portrait\",\n    \"lens\": \"50mm prime\",\n    \"aperture\": \"f/2.0\",\n    \"depth_of_field\": \"moderate\",\n    \"focus\": \"sharp on subject, soft floral projection edges\"\n  },\n  \n  \"lighting\": {\n    \"key_light\": \"soft frontal light\",\n    \"projection_light\": \"red flower projection mapping\",\n    \"contrast\": \"high contrast with dark background\"\n  },\n  \n  \"quality\": {\n    \"resolution\": \"ultra high\",\n    \"detail_level\": \"high\",\n    \"realism\": \"photorealistic with surreal overlay\",\n    \"render_style\": \"art gallery, cinematic, no HDR\"\n  }\n}",
     "title": "Surreal Fine Art Portrait with Red Flower Projection",
     "description": "A detailed prompt for generating a surreal, fine art portrait of a woman dancing against a black background, featuring large red flower petals projected onto her body. The prompt specifies dramatic high-contrast lighting and a poetic, introspective mood, blending photography with projection art.",

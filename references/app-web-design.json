@@ -1,5 +1,41 @@
 [
   {
+    "content": "Minimal abstract illustration.\nFlat but layered vector-style shapes,\nprecise curves, consistent stroke logic,\nlimited color palette with high harmony,\nbalanced spacing and alignment,\ndesigned to feel systemized and scalable,\nlike a mature brand illustration set.",
+    "title": "Minimal Abstract Vector Illustration Style",
+    "description": "A prompt designed for generating premium, systemized abstract illustrations. It specifies the use of flat, layered vector-style shapes, precise curves, consistent stroke logic, a limited color palette with high harmony, and balanced alignment, suitable for mature brand illustration sets.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769754984184_7oa9j9_G_dLLRsXYAAyW5x.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Abstract brand illustration representing {argument name=\"concept 1\" default=\"innovation\"} and {argument name=\"concept 2\" default=\"clarity\"}.\nGeometric forms with subtle depth,\nsmooth gradients, controlled contrast,\nmodern, restrained color palette,\ntimeless and non-trendy aesthetic,\ndesigned for long-term brand use.",
+    "title": "Abstract Brand Illustration for Innovation and Clarity",
+    "description": "A concise prompt for generating an abstract brand illustration. It specifies the representation of innovation and clarity using geometric forms, smooth gradients, and a modern, restrained color palette, emphasizing a timeless and non-trendy aesthetic suitable for long-term brand use.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755002609_otsj1v_G_K6mmfWIAAONxW.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "✓ Reference Image: Use the uploaded image as a precise visual reference for the product's form, proportion, material, and overall identity. Do not redesign or reinterpret the product.\n\n✓ Layout: Vertical 3:4 canvas, background is a warm neutral paper surface, the upper part is the lifestyle hero area, and the lower part is the technical specification area.\n\n✓ Upper Section: The product image is placed in the top center, dominating the space, with ample white space around it.\n\n✓ Environment Setting: Minimalist architectural interior, natural side lighting, soft high-contrast shadows, concrete floor, textured stucco walls.\n\n✓ Rendering Style: Editorial lifestyle photography, highly realistic, warm and soft high-end color grading.\n\n✓ Lower Section: Technical specification panel uses a modular grid layout. The bottom left features architectural line drawings (front view, side view, three-quarter top view), soft red or sepia thin lines, with minimal annotations.\n\n✓ Bottom Right: 3-4 material samples, derived from the product's actual materials ({argument name=\"material type\" default=\"fabric, leather, metal, wood, plastic\"}).\n\n✓ Typography: Minimalist editorial style, soft black or dark brown, no large titles.\n\n✓ Overall Style: Design catalog/product design journal, architectural, high-end, calm. Avoid clutter, bold colors, heavy branding, excessive decoration.\n\n✓ Constraints: Do not change the product design, do not fabricate materials, do not add logos unless present in the reference, do not use perspective distortion in the drawings.",
+    "title": "High-End Product Catalog Style Prompt (Nano Banana Pro)",
+    "description": "A detailed image generation prompt for Nano Banana Pro focused on creating a high-end, architectural product catalog layout. It specifies a vertical 3:4 canvas split between a lifestyle hero shot and a technical specification panel, including material samples and line drawings.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755040577_518wxr_G_y7n35bYAAIK4m.jpg"
+    ],
+    "needReferenceImages": true
+  },
+  {
+    "content": "Luxury coffee tasting menu layout, irregular grid composition, 9:16 aspect ratio for webpage.\nLAYOUT: Irregular 3x3 grid, varied cell sizes, flowing editorial arrangement\nBACKGROUND: Tone-on-tone panels - alternating {argument name=\"color 1\" default=\"latte beige (#F2E2D2)\"}, {argument name=\"color 2\" default=\"mocha brown (#D1B48F)\"}, and coffee cream (#FAF5E6) creating a subtle caffeinated rhythm\nPRODUCT EXPRESSION: Product only, overhead and 45-degree angles mixed, plated presentation on minimalist slate ceramics\nTONE STRATEGY: Tone-on-tone - coffee colors harmonize with background tones, an ethereal blend\nMAIN ELEMENTS: Individual coffee tastings - Espresso with crema foam, Cappuccino toast with gold dust, Caviar on blinis substituted with coffee caviar on biscotti, Latte with lemon twist, Mocha tartlet, each on matching plates, consistent soft lighting\nTYPOGRAPHY: Bilingual - English names in elegant light serif (Didot), English/Korean below in clean sans-serif, small origin descriptions in light gray\nCAMERA: Canon EOS R5, 100mm Macro for details, 50mm for full plates, soft diffused overhead lighting, side rim lighting\nSTYLE: Minimal + Luxury hybrid - generous whitespace, refined typography, coffee colors as primary source\nStyle keywords: coffee, tasting menu, tone-on-tone, luxury, webpage\n\nA delicate handwritten signature \"Willy\" is elegantly placed in small letters at the bottom right corner..",
+    "title": "Luxury Coffee Tasting Menu Layout Prompt",
+    "description": "A highly structured prompt for generating a luxury, minimalist, tone-on-tone coffee tasting menu layout for a webpage, specifying the grid composition, color palette, product presentation, typography, and camera details.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755016032_wyepkb_G_y43_7bUAAIIor.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
     "content": "Conceptual rebrand reveal visual for a modern tech company.\nAbstract transformation motifs,\nbefore-and-after visual tension,\nsoft directional lighting, restrained palette,\nconfident, forward-looking tone,\ncrafted like a global agency rebrand case study.",
     "title": "Conceptual Rebrand Reveal Visual Prompt",
     "description": "A concise prompt for generating a conceptual visual for a modern tech company's rebrand reveal. It focuses on abstract transformation motifs, visual tension between 'before-and-after' states, soft directional lighting, and a restrained color palette, aiming for a confident, forward-looking tone suitable for a global agency case study.",

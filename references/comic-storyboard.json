@@ -1,5 +1,32 @@
 [
   {
+    "content": "- **Sound Effect**: {argument name=\"sound effect text\" default=\"Stop treating me like a child\"} (in hand-drawn style text)",
+    "title": "AI Art Experiment: Speech Bubbles and Hand-Drawn Text",
+    "description": "An AI art experiment using Nanobanana to incorporate speech bubbles and hand-drawn text, treating the text as a sound effect in the prompt. The user notes the generation is unstable but likes the manga-like expression.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755048596_1puo6t_G_118hdbUAMPwgz.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Manga featuring {argument name=\"character\" default=\"Hasuka-chan\"} using nanobanana pro",
+    "title": "Daily Drawing: Hasuka-chan Manga",
+    "description": "A prompt used with nanobanana pro to create a manga featuring the character Hasuka-chan as part of the user's daily drawing routine.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755052690_lytgcw_G_0y7X3bUAQNySe.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
+    "content": "Google Nano Banana 72nd work, title: \"{argument name=\"title\" default=\"One Person and Three Animals\"}\". A solo adventurer successively recruits companion animals.",
+    "title": "Google Nano Banana Manga: One Person and Three Animals",
+    "description": "A prompt used to generate a manga story titled 'One Person and Three Animals' using Google Nano Banana. The story follows a solo adventurer who successively recruits companion animals, drawing inspiration from the Momotaro folk tale.",
+    "sourceMedia": [
+      "https://cms-assets.youmind.com/media/1769755049967_p4vidq_G_0u4cdbUBArNuh.jpg"
+    ],
+    "needReferenceImages": false
+  },
+  {
     "content": "combat scene, combat pose, rough sketch with energetic pencil strokes, hand-to-hand combat like shonen manga, different attack and defense scenes",
     "title": "Varied Combat Scene Rough Sketch Prompt",
     "description": "A second, more complex image generation prompt for NanoBananaPro, building on the previous one. This prompt aims to generate multiple, differing attack and defense scenarios within the same image, maintaining the style of a fierce, shonen manga-like hand-to-hand fight rendered as a rough pencil sketch.",
