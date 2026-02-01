@@ -180,6 +180,55 @@ Following [Claude Code skill best practices](https://github.com/anthropics/skill
 - [openskills](https://github.com/nicepkg/openskills) - Universal skills loader
 - [anthropics/skills](https://github.com/anthropics/skills) - Official Anthropic skills
 
+
+## Overview & Purpose
+
+Nano Banana Pro Prompts Recommend Skill is a Claude Code / Cursor skill that helps users discover high‑quality image generation prompts from a curated library of over 6000 examples. It streamlines the process of finding relevant prompts for social media posts, marketing assets, infographics and other creative outputs by offering intelligent recommendations based on user queries.
+
+## Features & Tech Stack
+
+**Key features**
+
+- Smart search across thousands of prompts organized by category.
+- Visual previews showing sample images for recommended prompts.
+- Ready‑to‑use English prompts tailored for Nano Banana Pro.
+- Content remixing to customize prompts based on your own text.
+- Scheduled updates via GitHub Actions to ensure the library stays current.
+
+**Tech stack**
+
+| Component | Technology |
+| --- | --- |
+| Programming language | TypeScript |
+| Runtime | Node.js 20+ |
+| Package manager | pnpm |
+| Automation | GitHub Actions, Claude Code skills CLI |
+| Data storage | JSON files generated from PayloadCMS |
+
+## Installation & Usage
+
+To install the skill with the recommended one‑liner, run:
+
+```bash
+npx skills i YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill
+```
+
+You can also install using the openskills tool:
+
+```bash
+npx openskills install YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill
+```
+
+After installing, ask your Claude Code or Cursor assistant to search for prompts or provide a piece of text and it will generate a customized image prompt. For local development, clone the repository, run `pnpm install` to install dependencies and `pnpm run generate` to fetch the latest prompt data.
+
+## Business & Entrepreneurial Value
+
+The Nano Banana Pro prompt recommendation engine can be packaged as a premium add‑on to creative suites or workflow automation platforms. By offering a subscription‑based API or licensing the curated prompt library, you can monetize access for marketing teams, social media agencies and businesses seeking to accelerate content creation. The system is designed to scale — the JSON data source can be expanded with new categories and integrated into SaaS platforms via API endpoints. Upsell opportunities include personalized prompt generation services, white‑label licensing and integrations with content management tools.
+
+## Consumer Value
+
+For end users, this skill eliminates the time and frustration of hunting for effective image prompts. Users simply describe what they need and receive ready‑made prompts with visual examples, saving hours of manual research. The ability to remix prompts using their own content offers customization and creative control while maintaining privacy — no sensitive data is stored. Whether you are a blogger, marketer or hobbyist, the skill makes it easy to produce high‑quality visuals that match your style and objectives, leading to better engagement and a more polished final product.
+
 ## License
 
 MIT
