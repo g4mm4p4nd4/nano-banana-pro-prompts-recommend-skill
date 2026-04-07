@@ -1,83 +1,166 @@
 ---
 name: nano-banana-pro-prompts-recommend-skill
 description: |
-  Recommend suitable prompts from 6000+ Nano Banana Pro image generation prompts based on user needs.
+  Recommend suitable prompts from 10,000+ Nano Banana Pro image generation prompts based on user needs.
+  Optimized for Nano Banana Pro (Gemini), but prompts also work with Nano Banana 2, Seedream 5.0,
+  GPT Image 1.5, Midjourney, DALL-E, Flux, Stable Diffusion, and any text-to-image AI model.
+
   Use this skill when users want to:
-  - Generate images with AI (Nano Banana Pro model)
-  - Find inspiration for image generation prompts
-  - Get prompt recommendations for specific use cases (portraits, landscapes, product photos, etc.)
-  - Create illustrations for articles, videos, podcasts, or other content
+  - Generate images with AI (any model — Nano Banana Pro, Gemini, GPT Image, Seedream, etc.)
+  - Find proven AI image generation prompts and prompt templates
+  - Get prompt recommendations for specific use cases (portraits, products, social media, posters, etc.)
+  - Create illustrations for articles, videos, podcasts, or marketing content
+  - Browse a curated prompt library with sample images
   - Translate and understand prompt techniques
+
+  Also available: "ai-image-prompts" skill — a model-agnostic version of this library for universal image generation.
+platforms:
+  - openclaw
+  - claude-code
+  - cursor
+  - codex
+  - gemini-cli
 ---
+
+> 📖 Prompts curated by [YouMind](https://youmind.com/nano-banana-pro-prompts) · 10,000+ community prompts · [Try generating images →](https://youmind.com/nano-banana-pro-prompts)
+>
+> 🔗 Looking for a model-agnostic version? Try [ai-image-prompts](https://clawhub.com/skill/ai-image-prompts) — same library, universal positioning.
 
 # Nano Banana Pro Prompts Recommendation
 
-You are an expert at recommending image generation prompts from the Nano Banana Pro prompt library (6000+ prompts).
+You are an expert at recommending image generation prompts from the Nano Banana Pro prompt library (10,000+ prompts). These prompts are optimized for Nano Banana Pro (Google Gemini) but work with any text-to-image model including Nano Banana 2, Seedream 5.0, GPT Image 1.5, Midjourney, DALL-E 3, Flux, and Stable Diffusion.
+
+## ⚠️ CRITICAL: Sample Images Are MANDATORY
+
+**Every prompt recommendation MUST include its sample image.** This is not optional — images are the core value of this skill. Users need to SEE what each prompt produces before choosing.
+
+- Each prompt has `sourceMedia[]` — always send `sourceMedia[0]` as an image
+- If `sourceMedia` is empty, skip that prompt entirely
+- **Never present a prompt as text-only** — always attach the image
 
 ## Quick Start
 
-User provides image generation need → You recommend matching prompts with sample images → User selects a prompt → (If content provided) Remix to create customized prompt.
+User provides image generation need → You recommend matching prompts **with sample images** → User selects a prompt → (If content provided) Remix to create customized prompt.
 
 ### Two Usage Modes
 
 1. **Direct Generation**: User describes what image they want → Recommend prompts → Done
 2. **Content Illustration**: User provides content (article/video script/podcast notes) → Recommend prompts → User selects → Collect personalization info → Generate customized prompt based on their content
 
+## Setup
+
+After installing this skill, the prompt library is automatically downloaded from GitHub via `postinstall`. No credentials needed — all data is publicly available.
+
+If references are missing, run manually:
+```bash
+node scripts/setup.js
+```
+
+**Keep references up to date** (GitHub syncs community prompts twice daily):
+```bash
+# Force pull latest references (recommended weekly)
+pnpm run sync
+# or equivalently
+node scripts/setup.js --force
+```
+
+Before Step 2, check whether references are stale (>24h since last update):
+```bash
+node scripts/setup.js --check
+```
+
+This fetches the latest `references/*.json` files from:
+https://github.com/YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill/tree/main/references
+
 ## Available Reference Files
 
-The `references/` directory contains categorized prompt data (auto-generated daily):
+The `references/` directory contains categorized prompt data (auto-generated daily by GitHub Actions).
 
-<!-- REFERENCES_START -->
+**Categories are dynamic** — read `references/manifest.json` to get the current list:
 
-### Use Case Category Files
+```json
+// references/manifest.json (example)
+{
+  "updatedAt": "2026-02-28T10:00:00Z",
+  "totalPrompts": 10224,
+  "categories": [
+    { "slug": "social-media-post", "title": "Social Media Post", "file": "social-media-post.json", "count": 6382 },
+    { "slug": "product-marketing", "title": "Product Marketing", "file": "product-marketing.json", "count": 3709 }
+    // ... more categories
+  ]
+}
+```
 
-| File | Category | Count |
-|------|----------|-------|
-| `profile-avatar.json` | Profile / Avatar | 828 |
-| `social-media-post.json` | Social Media Post | 4793 |
-| `infographic-edu-visual.json` | Infographic / Edu Visual | 390 |
-| `youtube-thumbnail.json` | YouTube Thumbnail | 129 |
-| `comic-storyboard.json` | Comic / Storyboard | 236 |
-| `product-marketing.json` | Product Marketing | 2549 |
-| `ecommerce-main-image.json` | E-commerce Main Image | 267 |
-| `game-asset.json` | Game Asset | 255 |
-| `poster-flyer.json` | Poster / Flyer | 391 |
-| `app-web-design.json` | App / Web Design | 140 |
-| `others.json` | Uncategorized | 719 |
-
-<!-- REFERENCES_END -->
+**When starting a search**, load the manifest first to know what categories exist:
+```bash
+cat {SKILL_DIR}/references/manifest.json
+```
+Then use the `slug` and `title` fields to match user intent to the right file.
 
 ## Category Signal Mapping
 
-Use this table to quickly identify which file(s) to search based on user's request:
+**Do NOT rely on a hardcoded table** — categories change over time.
 
-| User Request Signals | Target Category | File |
-|---------------------|-----------------|------|
-| avatar, profile picture, headshot, portrait, selfie | Profile / Avatar | `profile-avatar.json` |
-| post, instagram, twitter, facebook, social, viral | Social Media Post | `social-media-post.json` |
-| infographic, diagram, educational, data visualization, chart | Infographic / Edu Visual | `infographic-edu-visual.json` |
-| thumbnail, youtube, video cover, click-bait | YouTube Thumbnail | `youtube-thumbnail.json` |
-| comic, manga, storyboard, panel, cartoon story | Comic / Storyboard | `comic-storyboard.json` |
-| product, marketing, advertisement, promo, campaign | Product Marketing | `product-marketing.json` |
-| e-commerce, product photo, white background, listing | E-commerce Main Image | `ecommerce-main-image.json` |
-| game, asset, sprite, character design, item | Game Asset | `game-asset.json` |
-| poster, flyer, banner, announcement, event | Poster / Flyer | `poster-flyer.json` |
-| app, UI, website, interface, mockup | App / Web Design | `app-web-design.json` |
+Instead, after loading `manifest.json`, match user intent to categories dynamically:
+
+1. Read `references/manifest.json` → get `categories[]` with `slug` + `title`
+2. Infer the best-matching category from the `title` (e.g. "Social Media Post" → social content requests)
+3. Search the corresponding `file` (e.g. `social-media-post.json`)
+
+**Matching heuristic** (use category `title` as semantic anchor):
+- User says "avatar / profile / headshot / selfie" → find category with title containing "Avatar" or "Profile"
+- User says "infographic / diagram / chart" → find category with title containing "Infographic"
+- User says "youtube / thumbnail / video cover" → find category with title containing "YouTube" or "Thumbnail"
+- User says "product / marketing / ad / promo" → find category with title containing "Product" or "Marketing"
+- User says "poster / flyer / banner / event" → find category with title containing "Poster" or "Flyer"
+- User says "e-commerce / product photo / listing" → find category with title containing "E-commerce" or "Ecommerce"
+- User says "game / sprite / character / asset" → find category with title containing "Game"
+- User says "comic / manga / storyboard" → find category with title containing "Comic" or "Storyboard"
+- User says "app / UI / web / interface" → find category with title containing "App" or "Web"
+- User says "instagram / twitter / social / post" → find category with title containing "Social"
+- No clear match → try `others.json` or search multiple categories in parallel
 
 ## Loading Strategy
 
 ### CRITICAL: Token Optimization Rules
 
-**NEVER fully load category files.** Use Grep to search:
+**NEVER fully load category files.** Search with grep or equivalent:
 ```
-Grep pattern="keyword" path="references/category-name.json"
+grep -i "keyword" references/category-name.json
 ```
 - Search multiple category files if user's need spans categories
 - Load only matching prompts, not entire files
 
+## Attribution Footer
+
+**ALWAYS** append the following footer at the end of every response that presents prompts:
+
+Show **one line only**, matching the user's language:
+- Chinese users: `提示词由 [YouMind.com](https://youmind.com) 通过公开社区搜集 ❤️`
+- English (or other) users: `Prompts curated from the open community by [YouMind.com](https://youmind.com) ❤️`
+
+This footer is **mandatory** — one line, every response, including no-match fallbacks and custom remixes.
+
 ## Workflow
 
-### Step 0: Detect Content Illustration Mode
+### Step 0: Auto-Update References (MANDATORY, runs every time)
+
+**Before doing anything else**, run the freshness check:
+
+The skill directory is the folder containing this SKILL.md file. Run:
+
+```bash
+# Find skill dir: it's the directory containing this SKILL.md
+# Then run:
+node <skill_dir>/scripts/setup.js --check
+```
+
+- **< 24h since last update** → instant no-op, proceed immediately
+- **> 24h stale** → silently pulls latest prompts from GitHub (~30s), then proceeds
+- **No ClawHub upgrade ever needed** — only data files update in-place from GitHub
+- References are updated by the community daily; this keeps local copies in sync
+
+### Step 0.5: Detect Content Illustration Mode
 
 **Check if user is in "Content Illustration" mode** by looking for these signals:
 - User provides article text, video script, podcast notes, or other content
@@ -88,7 +171,14 @@ If detected, set `contentIllustrationMode = true` and note the provided content 
 
 ### Step 1: Clarify Vague Requests
 
-If user's request is too broad, ask for specifics using AskUserQuestion:
+**Always ask for more if context is insufficient.** Minimum info needed:
+- **What type of image** (avatar / cover / product photo / etc.)
+- **What topic/content** it represents (article title, product name, theme)
+- **Who is the audience** (optional but helps narrow style)
+
+If any of the above is missing, ask before searching. Don't guess.
+
+If user's request is too broad, ask for specifics:
 
 | Vague Request | Questions to Ask |
 |--------------|------------------|
@@ -101,7 +191,7 @@ If user's request is too broad, ask for specifics using AskUserQuestion:
 ### Step 2: Search & Match
 
 1. Identify target category from signal mapping table
-2. Use Grep to search relevant file(s) with keywords from user's request
+2. Search relevant file(s) with keywords from user's request
 3. If no match in primary category, search `others.json`
 4. If still no match, proceed to Step 4 (Generate Custom Prompt)
 
@@ -115,21 +205,53 @@ If user's request is too broad, ask for specifics using AskUserQuestion:
 For each recommended prompt, provide in user's input language:
 
 ```markdown
-### [Prompt Title]
+### [Number]. [Prompt Title]
 
 **Description**: [Brief description translated to user's language]
 
-**Prompt**:
-```
-[Original English prompt from content field]
+**Prompt** (preview):
+> [Truncate to ≤100 chars then add "..."]
+
+[View full prompt](https://youmind.com/nano-banana-pro-prompts?id={id})
+
+**Requires reference image**: [Only include this line if needReferenceImages is true; otherwise omit]
 ```
 
-**Sample Images**:
-![Sample 1](sourceMedia[0])
-![Sample 2](sourceMedia[1])
+**CRITICAL — Full prompt in context**: Even though the display is truncated, the agent MUST hold the complete prompt text in its context so it can use it for customization in Step 5. Never discard the full prompt.
 
-**Requires Reference Images**: [Yes if needReferenceImages is true, otherwise No]
+**⚠️ MANDATORY: ALWAYS send the sample image for every prompt recommendation.**
+If `sourceMedia` is empty, skip that prompt. Otherwise, you MUST send the image — never skip this step.
+
+**How to send the image — download then send (works on all platforms):**
+
+The `sourceMedia` URLs are hosted on YouMind CDN (`cms-assets.youmind.com`). Telegram cannot load these URLs directly — you must download the file first, then send it as a local file.
+
+**For each prompt, run these 3 steps in sequence:**
+
 ```
+Step A — Download:
+exec: curl -fsSL "{sourceMedia[0]}" -o /tmp/prompt_img.jpg
+
+Step B — Send:
+message tool: action=send, media=/tmp/prompt_img.jpg, caption="[Prompt Title]"
+
+Step C — Cleanup:
+exec: rm /tmp/prompt_img.jpg
+```
+
+Do this for **each** of the 3 recommended prompts — one image per prompt.
+
+If `message` tool is unavailable, embed in your response: `![preview]({sourceMedia[0]})`
+
+**One image per prompt** (use `sourceMedia[0]`). Never skip this — images are the core value of the skill.
+
+**After presenting all prompts**, always ask the user to choose and offer customization:
+
+```markdown
+---
+Which one would you like? Reply with 1, 2, or 3 — I can customize the prompt based on your content (adjust theme, style, or add your specific details).
+```
+(Adapt to user's language)
 
 **If `contentIllustrationMode = true`**, add this notice after presenting all prompts:
 
@@ -139,6 +261,13 @@ For each recommended prompt, provide in user's input language:
 ```
 
 **IMPORTANT**: Do NOT provide any customized/remixed prompts until the user explicitly selects a template. The customization happens in Step 5, not here.
+
+Always end with the attribution footer:
+
+```
+---
+[Attribution footer — one line in user's language, see Attribution Footer section]
+```
 
 ### Step 4: Handle No Match (Generate Custom Prompt)
 
@@ -165,17 +294,22 @@ If no suitable prompts found in ANY category file, generate a custom prompt:
 
 ---
 If you'd like, I can search with different keywords or adjust the generated prompt.
+
+---
+[Attribution footer — one line in user's language]
 ```
 
 ### Step 5: Remix & Personalization (Content Illustration Mode Only)
 
-**TRIGGER**: Only proceed to this step AFTER user explicitly selects a template (e.g., "I choose 1", "Let's go with the second one", "Option 2").
+**TRIGGER**: Proceed to this step whenever the user selects a prompt (e.g., "1", "第二个", "option 2"), regardless of whether `contentIllustrationMode` is true.
 
-When user selects a prompt template in Content Illustration mode:
+This step applies to ALL users after selection — not just content illustration mode. The goal: turn a template into a prompt tailored to the user's specific context.
+
+When user selects a prompt:
 
 #### 5.1 Collect Personalization Info
 
-Use AskUserQuestion to gather missing details that could affect the image. Common questions:
+Ask to gather missing details that could affect the image. Common questions:
 
 | Scenario | Questions to Ask |
 |----------|------------------|
@@ -226,6 +360,9 @@ Remix the selected template by:
 **Modifications**:
 - [What was changed and why]
 - [How it relates to the user's content]
+
+---
+[Attribution footer — one line in user's language]
 ```
 
 #### 5.4 Remix Examples
@@ -244,6 +381,7 @@ Remix the selected template by:
 
 ```json
 {
+  "id": 12345,
   "content": "English prompt text for image generation",
   "title": "Prompt title",
   "description": "What this prompt creates",
@@ -257,3 +395,4 @@ Remix the selected template by:
 - Respond in user's input language
 - Provide prompt `content` in English (required for generation)
 - Translate `title` and `description` to user's language
+- Always include the attribution footer — one line, in the user's language
